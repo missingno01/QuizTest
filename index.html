@@ -204,75 +204,37 @@ Question 11.
 
 </blockquote>
 
-<p><b>
-
-<hr>
-
-Question 12.
-
-<br>She --------------------.<br></b>
+<p>
 
 <blockquote>
 
 <input type="radio" name="q12" value="don't know">don't know<br>
 
-<input type="radio" name="q12" value="doesn't knows">doesn't knows<br>
-
-<input type="radio" name="q12" value="doesn't know">doesn't know<br>
-
 </blockquote>
 
-<p><b>
-
-<hr>
-
-Question 13.
-
-<br>She -------------------- hard.<br></b>
+<p>
 
 <blockquote>
 
 <input type="radio" name="q13" value="try">try<br>
 
-<input type="radio" name="q13" value="trys">trys<br>
-
-<input type="radio" name="q13" value="tries">tries<br>
-
 </blockquote>
 
-<p><b>
-
-<hr>
-
-Question 14.
-
-<br>They -------------------- football every weekend.<br></b>
+<p>
 
 <blockquote>
 
 <input type="radio" name="q14" value="play">play<br>
 
-<input type="radio" name="q14" value="plays">plays<br>
-
-<input type="radio" name="q14" value="playing">playing<br>
-
 </blockquote>
 
-<p><b>
-
-<hr>
-
-Question 15.
-
-<br>The exam -------------------- two hours.<br></b>
+<p>
 
 <blockquote>
 
 <input type="radio" name="q15" value="last">last<br>
 
-<input type="radio" name="q15" value="lastes">lastes<br>
 
-<input type="radio" name="q15" value="lasts">lasts<br>
 
 </blockquote>
 
@@ -337,17 +299,13 @@ answers[14] = "lasts";
 function getScore(form) {
 
 var score = 0;
-
 var currElt;
-
 var currSelection;
 
 for (i=0; i<numQues; i++) {
-
 currElt = i*numChoi;
-
 answered=false;
-
+  
 for (j=0; j<numChoi; j++) {
 
 currSelection = form.elements[currElt + j];
