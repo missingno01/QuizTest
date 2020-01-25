@@ -74,26 +74,15 @@ Purity out of 100 = <input type= text size 15 name= "mark">
 
 <script>
 
-var numQues = 100;
-
 function getScore(form) {
-
-var score = 0;
-var currElt;
-var currSelection;
-
-for (i=0; i<numQues; i++) {
-    currElt = i;
-    currSelection = form.elements[currElt];
-
-    if (currSelection.checked) {
-      score++;
+  var score = 0;
+  var input = document.getElementsByName("q1");
+  for (i=0; i<input.length; i++) {
+        if (input[i].checked) {
+          score++;
+        }
     }
- }
-
-
-form.mark.value=score;
-
+  form.mark.value=score;
 }
 
 </script>
